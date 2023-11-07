@@ -85,6 +85,7 @@ p {
 
 .order-desc {
     font-size: 28px;
+    flex-grow: 1;
 }
 
 .order-numbers {
@@ -112,6 +113,7 @@ p {
     border: none;
     background-color: #16DB99;
     color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: bold;
     padding: 18px;

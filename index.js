@@ -1,4 +1,4 @@
-import { menuArray as menuArr } from "/menuArray"
+import { menuArray as menuArr } from "/menuArray.js"
 
 const menuContainer = document.getElementById('menu-container')
 const orders = []
@@ -83,8 +83,13 @@ function handlePayBtnClk(){
     const cardForm = document.getElementById('card-form')
     const payFormData = new FormData(cardForm)
     const fullName = payFormData.get('fullName')
+    
     document.getElementById('modal').style.display = 'none'
+    
+    orders.splice(0, orders.length)
+    
     const orderedContainer = document.getElementById('ordered-container')
+    
     orderedContainer.innerHTML = `
         <div class="confirm-order-message">
             <p>Thanks, ${fullName}! Your order is on its way!</p>
