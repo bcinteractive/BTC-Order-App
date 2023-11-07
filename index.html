@@ -1,0 +1,51 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Smythe&display=swap" rel="stylesheet">
+        <!-- my custom css -->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </header>
+            <main id="main-container">
+                <div class="menu-container" id="menu-container"></div>
+                <div class="ordered-container" id="ordered-container"></div>
+            </main>
+            <footer>
+            </footer>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-inner" id="modal-inner">
+                <form id="card-form">
+                    <h2>Enter Card Details</h2>
+                    <input 
+                        type="text" 
+                        name="fullName" 
+                        placeholder="Enter your name"
+                        required >
+                    <input 
+                        type="text" 
+                        name="cardNumber" 
+                        placeholder="Enter card number"
+                        required >
+                    <input 
+                        type="text" 
+                        name="cvv" 
+                        placeholder="Enter CVV>"
+                        required >
+                    <div class="div-btn">
+                        <button type="submit" id="pay-btn">Pay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
